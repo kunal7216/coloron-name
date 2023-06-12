@@ -13,6 +13,7 @@ class Game {
         this.color = this.colors[0]; // the intial color of the ball
         this.prevColor = null; // used as a holder to prevent ball colors from repeating
     }
+    
 
     /**
      * The game screen is scalable. I took 1200x800px as the initial scale.
@@ -22,6 +23,8 @@ class Game {
      * The function is called in the controller and anywhere where I need
      * to recalculate the scale on screen resize or device rotation
      */
+    
+    
     calculateScale() {
         this.screen = $(window).width(); // screen width
         this.screenHeight = $(window).height();
@@ -29,11 +32,14 @@ class Game {
         this.stickWidth = 180*this.scale;
         this.steps = this.screen/this.stickWidth; // how many steps (stick width + margin) it takes from one end to another
     }
+    
 
     /**
      * Creating as many sticks we need to fill the screen
      * from start to end of the screen. The steps property is used for that
      */
+    
+    
     generateSticks() {
         let numberOfSticks = Math.ceil(this.steps);
         for(let i = 0; i <= numberOfSticks; i++)
@@ -52,9 +58,13 @@ class Game {
         window.open("https://twitter.com/intent/tweet?url=https://codepen.io/gregh/full/yVLOyO&amp;text=I scored "+ this.score +" points on Coloron! Can you beat my score?&amp;via=greghvns&amp;hashtags=coloron", "TweetWindow", "width=600px,height=300px,top=" + top + ",left=" + left);
     }
 
+    
     /**
      * The greeting when the game begins
      */
+    
+    
+    
     intro() {
 
         TweenMax.killAll();
