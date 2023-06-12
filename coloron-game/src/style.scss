@@ -125,12 +125,15 @@
     @include bubble_shape;
     @include bubble(10px, 22px, 55px);
 }
+
 .triangle-2 {
     @include triangle_hollow(16px, 14px, 27px, 15px);
 }
+
 .triangle-3 {
     @include triangle_hollow(24px, 19px, 60px, 43px);
 }
+
 .triangle-4 {
     @include bubble_shape(3px);
     @include bubble_hollow(8px, 61px, 17px);
