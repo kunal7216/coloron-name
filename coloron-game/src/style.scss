@@ -6,12 +6,14 @@
     border-width: $width;
 }
 
+
 @mixin bubble ($size, $top, $left) {
     height: $size;
     width: $size;
     top: $top;
     left: $left;
 }
+
 
 @mixin bubble_hollow ($size, $top, $left) {
     @include bubble ($size, $top, $left);
