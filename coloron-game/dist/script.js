@@ -1,4 +1,5 @@
 class Game {
+  
 
   constructor() {
     this.score = 0;
@@ -13,6 +14,7 @@ class Game {
     this.color = this.colors[0]; // the intial color of the ball
     this.prevColor = null; // used as a holder to prevent ball colors from repeating
   }
+  
 
   /**
    * The game screen is scalable. I took 1200x800px as the initial scale.
